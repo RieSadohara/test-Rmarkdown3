@@ -9,5 +9,5 @@ navbar:
     - text: "NHANES"
       href: Links.html
     - text: "Additional"
-      href: ASA24.html
+      href: Journal.html
 output_dir: "docs"
