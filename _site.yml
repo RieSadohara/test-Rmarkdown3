@@ -5,7 +5,7 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "ASA24"
-      href: Journal.html
+      href: ASA24.html
     - text: "NHANES"
       href: Links.html
     - text: "Additional"
