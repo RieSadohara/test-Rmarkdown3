@@ -21,6 +21,8 @@ output: html_document
 
 MyLabJournal_test_Rmarkdown3
 
+Let's test if I can change the name of this index file...
+
 This is a template example for lab journaling. Students in Matt Crump's Human Cognition and Performance Lab will use this template to learn R, and other things. Students can replace this text with more fun things. People not in my lab can use this too.
 
 ## How to use
@@ -32,14 +34,3 @@ This is a template example for lab journaling. Students in Matt Crump's Human Co
 3. See the [links page](https://crumplab.github.io/LabJournalWebsite/Links.html) for lots of helpful links on learning R.
 
 4. Change everything to make it your own.
-
-
-</div>
-<div class="col-sm-6">
-
-### [Crump Lab: Human Cognition and Performance](https://crumplab.github.io)
-
-<a href = "https://crumplab.github.io">
-![](images/logo.png)
-</a>
-</div>
