@@ -1,5 +1,5 @@
 ---
-title: "ASA24 No_1_title"
+title: "ASA24 No_1 load and clean ASA24 data"
 output: html_document
 ---
 
@@ -7,27 +7,38 @@ output: html_document
 knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 ```
 
-IMPORTANT: You can delete everything in here and start fresh. You might want to start by not deleting anything above this line until you know what that stuff is doing.
+## What this script does:
+1. Use Metadata 1 to filter out individuals.
+2. Remove users that has only a small number of totals (days of record). - if you know which one to remove.  
+3. Look for outliers in your totals by nutrient consumed on each day.
 
-# What this script does:
-Use Metadata 1 to filter out individuals. 
-Remove users that has only a small number of totals (days of record). - if you know which one to remove.  
-Look for outliers in your totals by nutrient consumed on each day.
-
+## How to specify path to data.
 ```{r}
 shape_path <- "~/GitHub/dietary_patterns"
-myfile <- paste(shape_path, "/eg_data/VVKAJ/VVKAJ_Items.txt", sep="")
-print(myfile)
+myfilepath <- paste(shape_path, "/eg_data/VVKAJ/VVKAJ_Items.txt", sep="")
+print(myfilepath)
 ```
-# OK, can be loaded this way... 
+
+## How to load data.
+```{r}
+myRobject <- read.table(myfilepath, sep="\t", header=T)
+
+head(myRobject)
+```
+
 need to hide the part to:
 1. set working directory
 2. load necessary functions and packages. (because the paths aren't correct for users)
 3. load items data etc.
 
-## Load the necessary functions
+### Load the necessary functions
 ```{r}
 source(paste(shape_path, "/lib/specify_data_dir.R", sep=""))
+```
+
+### Load the necessary packages
+```{r}
+library(ggplot2)
 ```
 
 
