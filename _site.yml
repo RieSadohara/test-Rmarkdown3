@@ -9,9 +9,9 @@ navbar:
   - text: ASA24
     menu:
     - text: ASA24_1
-      href: ASA24.html
+      href: ASA24_1.html
     - text: ASA24_2
-      href: Additonal.html
+      href: ASA24_2.html
   - text: NHANES
     menu:
     - text: NHANES_1
