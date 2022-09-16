@@ -1,30 +1,21 @@
 # Structure of this website: 
 # https://riesadohara.github.io/test-Rmarkdown3/index.html
-
 name: "DietR Tutorial name"
 navbar:
   title: "DietR Tutorial title"
-  structure:
-    left:
-    - Home
-    - ASA24
-    - NHANES
-  components:
-    Home:
-      text: Home
-      href: index.html
-    ASA24:
-      text: ASA24
-      menu:
-      - text: ASA24_1
-        href: ASA24.html
-      - text: ASA24_2
-        href: Additonal.html
-      text: NHANES
-    NHANES  
-      menu:
-      - text: NHANES_1
-        href: Links.html
-      - text: NHANES_2
-        href: thing1.html
+  left:
+  - text: Home
+    href: index.html
+  - text: ASA24
+    menu:
+    - text: ASA24_1
+      href: ASA24.html
+    - text: ASA24_2
+      href: Additonal.html
+  - text: NHANES
+    menu:
+    - text: NHANES_1
+      href: Links.html
+    - text: NHANES_2
+      href: thing1.html
 output_dir: "docs"
